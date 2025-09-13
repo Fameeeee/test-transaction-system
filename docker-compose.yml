@@ -24,7 +24,7 @@ services:
       - ./backend/.env
     environment:
       - DATABASE_URL=postgres://postgres:postgres@postgres:5432/app
-      - JWT_SECRET=${JWT_SECRET:testsecret}
+      - JWT_SECRET=testsecret
       - PORT=4000
     depends_on:
       postgres:
