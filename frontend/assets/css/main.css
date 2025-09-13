@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #dc2626;
+}
+
+@supports (scrollbar-gutter: stable) {
+  html {
+    scrollbar-gutter: stable both-edges;
+  }
+}
+
+.app-header-title {
+  position: relative;
+}
+.app-header-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 9999px;
+}
